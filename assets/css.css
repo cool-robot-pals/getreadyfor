@@ -39,6 +39,7 @@ h1 {
 
 h1 strong {
 	color: var(--red);
+	font-weight: inherit;
 }
 
 x-word {
