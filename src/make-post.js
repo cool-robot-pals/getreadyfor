@@ -1,4 +1,8 @@
 const fs = require('fs');
+const nouns = fs
+	.readFileSync(__dirname + '/../assets/words/nouns.txt', 'utf8')
+	.split('\n');
+
 const { randomArrKey, txtToArr } = require('./lib/helper');
 
 const vocabulary = txtToArr(
@@ -12,16 +16,17 @@ const makePost = async product => {
 		.map(word =>
 			word
 				.split('')
-				.map(
-					(letter, i) => (i === 0 ? letter.toUpperCase() : letter.toLowerCase())
+				.map((letter, i) =>
+					i === 0 ? letter.toUpperCase() : letter.toLowerCase()
 				)
 				.join('')
 		)
 		.join(' ');
 
-	const tweet = randomArrKey(vocabulary).replace('$1', name);
-
+	const noun = randomArrKey(nouns);
+	const tweet = `Get ready for ${noun}`;
 	return {
+		noun,
 		product,
 		name,
 		tweet,

@@ -36,7 +36,7 @@ const takeScreenshot = async url => {
 			}
 		});
 		Promise.all([
-			page.setViewport({ width: 4400, height: 2500 }),
+			page.setViewport({ width: 1280, height: 720 }),
 			page.goto(url),
 		]);
 	});

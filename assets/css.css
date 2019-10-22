@@ -1,157 +1,76 @@
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@font-face {
+	font-family: 'din';
+	src: url('./din.ttf');
+}
+
+:root {
+	--blue: #113561;
+	--red: #f60030;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	width: 100%;
-	height: 100%;
+	font-family: sans-serif;
+	width: 1280px;
+	background: #fff;
+	height: 720px;
+	border-right: 2px solid red;
+	border-bottom: 2px solid red;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
+	flex-direction: column;
 	-webkit-font-smoothing: antialiased;
 }
 
-x-zero {
-	position: absolute;
-	background: #999 url(./zero-sugar.svg) no-repeat;
-	background-position: 50% 18%;
-	background-size: 60%;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 50%;
+h1 {
+	font-family: din;
+	font-size: 140px;
+	color: var(--blue);
+	letter-spacing: -0.03em;
 }
 
-x-fanta {
-	width: 1000px;
-	height: 2000px;
-	display: block;
-	position: relative;
-	-webkit-mask: url(./can-mask.png) no-repeat center;
-	-webkit-mask-size: contain;
-	mask: url(./can-mask.png) no-repeat center;
-	mask-size: contain;
-	background-color: var(--bg-hero);
-	transform: rotate(var(--rotation));
+h1 strong {
+	color: var(--red);
 }
 
-x-fanta x-logo {
-	z-index: 50;
-}
-
-x-fanta x-zero {
-	z-index: 49;
-}
-
-x-fanta:before {
-	background: url(./can.png) no-repeat center;
-	mix-blend-mode: color-dodge;
-	z-index: 98;
-}
-x-fanta:after {
-	background: url(./can-cap.png) no-repeat center;
-	z-index: 99;
-}
-
-x-fanta:after,
-x-fanta:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	width: 100%;
-	background-size: contain;
-	pointer-events: none;
-}
-
-x-logo > * {
-	position: absolute;
-}
-
-x-logo {
-	width: 1000px;
-	height: 90%;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	transform: rotate(-7deg) scale(1.2) translateX(-1%);
-}
-
-x-label {
-	color: white;
-	font-size: 75px;
+x-word {
 	text-transform: capitalize;
-	font-family: 'Fredoka One', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	display: inline-block;
-	right: 40%;
-	left: 10%;
-	top: 60%;
-	line-height: 1.2;
-	z-index: 10;
 }
 
-x-label span {
-	background: #77b94c;
-	padding: 0em 0.5em;
-	display: inline-block;
-	margin-left: -0.25em;
-	margin-right: -0.225em;
-	margin-bottom: 0.1em;
+x-arrow {
+	align-self: flex-start;
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
 }
 
-x-fanta x-logo-holder {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
+x-arrow {
+	color: var(--blue);
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: -0.04em;
 }
 
-x-fanta x-logo-holder svg {
-	width: 100%;
-	height: 100%;
+x-arrow img {
+	margin-right: 1em;
 }
 
-x-fanta x-logo-holder #roundel {
-	fill: var(--bg-roundel);
+x-arrow x-word {
+	text-transform: capitalize;
 }
 
-x-fanta x-edibles {
-	position: absolute;
-	top: 56%;
-	left: 54%;
-	right: 0;
-	bottom: 0;
-	width: 36%;
-	height: 22%;
-	--offset: -15%;
+x-arrow strong {
+	font-weight: inherit;
+	color: var(--red);
+	border-bottom: 2px solid var(--red);
 }
 
-x-fanta x-edibles img {
-	width: 100%;
-	position: absolute;
-}
-
-x-fanta x-edibles[data-length='2'] img {
-	position: absolute;
-	transform: scale(0.8);
-}
-
-x-fanta x-edibles[data-length='2'] img:last-child {
-	bottom: calc(var(--offset) * 1);
-	left: var(--offset);
-}
-
-x-fanta x-edibles[data-length='2'] img:first-child {
-	right: var(--offset);
-	top: calc(var(--offset) * 1);
+x-arrow strong x-word {
+	text-transform: lowercase;
 }
