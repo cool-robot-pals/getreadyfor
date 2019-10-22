@@ -3,6 +3,8 @@
 	src: url('./din.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+
 :root {
 	--blue: #113561;
 	--red: #f60030;
@@ -14,7 +16,7 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: Roboto;
 	width: 1280px;
 	background: #fff;
 	height: 720px;
@@ -53,8 +55,8 @@ x-arrow {
 x-arrow {
 	color: var(--blue);
 	font-size: 30px;
-	font-weight: 600;
-	letter-spacing: -0.04em;
+	font-weight: 900;
+	letter-spacing: -0.01em;
 }
 
 x-arrow img {
