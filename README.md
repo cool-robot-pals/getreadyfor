@@ -1,12 +1,12 @@
-# red-hot-chili-fanta
+# getreadyfor
 
-<img src="https://pbs.twimg.com/media/DdqaWQwVMAEESUj.jpg:large"/>
+<img src="https://pbs.twimg.com/media/EHfga7kW4AIsO_5.jpg:large"/>
 
-Source for <a href="https://twitter.com/fakefantas">@fakefantas</a> a bot that makes random Fanta flavours
+Source for <a href="https://twitter.com/readyforspoons">@readyforspoons</a> a bot that makes random fake (but disappointingly real) Brexit posters
 
 ## how
 
-It'll fetch a random emoji from a master list of edible emoji (to avoid faces & flags taking over all posts) then maybe throw in an adjective and then it makes a webpage out of it, screenshots it and tweets it.
+It'll fetch a random noun from a master list of nouns and then it make a webpage out of it, screenshot it and tweet it.
 
 I recommend reading the code itself, (start at `app.js`!) it's pretty straightforward and simpler than that mouthful of an explanation!!
 
@@ -14,9 +14,9 @@ I recommend reading the code itself, (start at `app.js`!) it's pretty straightfo
 
 1. Clone this repo
 
-2. Run `npm install` to get all the dependencies. This will take a while. Go drink a normal boring fanta while you wait.
+2. Run `npm install` to get all the dependencies. This will take a while. Go sit around and pretend to negotiate a deal while you wait.
 
-3. Run `node` and you should get a link to `http://localhost:3000`, showing a massive can of fanta. Browser support is very flaky.
+3. Run `node` and you should get a link to `http://localhost:3000`, showing a massive disappointment. Browser support is very flaky.
 
 4. To take screenies, run `node ./bin/screenshot.js`
 
@@ -24,4 +24,4 @@ I recommend reading the code itself, (start at `app.js`!) it's pretty straightfo
 
 #### autoposting
 
-The actual live <a href="https://twitter.com/fakefantas">@fakefantas</a> is in sync with this exact codebase, it's hosted in heroku, which has a free forever tier, and there's a scheduled process that runs `node ./bin/tweet.js` hourly
+The actual live <a href="https://twitter.com/readyforspoons">@readyforspoons</a> is in sync with this exact codebase, it's hosted in heroku, which has a free forever tier, and there's a scheduled process that runs `node ./bin/tweet.js` hourly
