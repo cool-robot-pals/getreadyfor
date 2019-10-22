@@ -16,7 +16,7 @@
 }
 
 body {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	width: 1280px;
 	background: #fff;
 	height: 720px;
@@ -57,6 +57,7 @@ x-arrow {
 	color: var(--blue);
 	font-size: 30px;
 	font-weight: 900;
+	font-family: 'Roboto';
 	letter-spacing: -0.01em;
 }
 
