@@ -3,7 +3,7 @@
 	src: url('./din.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,800');
 
 :root {
 	--blue: #113561;
@@ -16,7 +16,7 @@
 }
 
 body {
-	font-family: 'Roboto';
+	font-family: 'Heebo';
 	width: 1280px;
 	background: #fff;
 	height: 720px;
@@ -57,7 +57,7 @@ x-arrow {
 	color: var(--blue);
 	font-size: 30px;
 	font-weight: 900;
-	font-family: 'Roboto';
+	font-family: 'Heebo';
 	letter-spacing: -0.01em;
 }
 
