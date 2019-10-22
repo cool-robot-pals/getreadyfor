@@ -14,7 +14,7 @@ I recommend reading the code itself, (start at `app.js`!) it's pretty straightfo
 
 1. Clone this repo
 
-2. Run `npm install` to get all the dependencies. This will take a while. Go sit around and pretend to negotiate a deal while you wait.
+2. Run `npm install` to get all the dependencies. This will take a while. While you wait, talk about how you're negotiating a better deal for Britain with the person closest to you.
 
 3. Run `node` and you should get a link to `http://localhost:3000`, showing a massive disappointment. Browser support is very flaky.
 
